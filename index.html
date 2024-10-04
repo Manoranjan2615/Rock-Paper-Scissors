@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissors Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <h1>Hello Gamer</h1>
+  <marquee behavior="scroll" direction="left">Welcome to the Rock Paper Scissors Game! Choose wisely!</marquee>
+  <div class="mode-button">
+    <button onclick="setMode('computer')">Play Against Computer</button>
+    <button onclick="setMode('two-player')">Two Player Mode</button>
+  </div>
+  <div id="gameArea" style="display: none;">
+    <p id="modeInfo"></p>
+    <div class="player-container">
+      <div class="player" id="player1">
+        <h3>Player 1</h3>
+        <button onclick="play('Rock', 1)">Rock</button>
+        <button onclick="play('Paper', 1)">Paper</button>
+        <button onclick="play('Scissor', 1)">Scissor</button>
+        <h5 id="result1"></h5>
+        <h5 id="result11"></h5>
+        <h5 id="result12"></h5>
+      </div>
+      <div class="player" id="player2" style="display: none;">
+        <h3>Player 2</h3>
+        <button onclick="play('Rock', 2)">Rock</button>
+        <button onclick="play('Paper', 2)">Paper</button>
+        <button onclick="play('Scissor', 2)">Scissor</button>
+        <h5 id="result2"></h5>
+        <h5 id="result22"></h5>
+      </div>
+    </div>
+    <h4 id="roundResult"></h4>
+    <h4 id="count"></h4>
+    <p id="try"></p>
+    <div class="reset-container">
+      <button onclick="resetScores()" id="reset">Reset Points</button>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>

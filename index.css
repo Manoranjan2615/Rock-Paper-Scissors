@@ -1,0 +1,123 @@
+body {
+    font-family: "Exo 2", sans-serif;
+    text-align: center;
+    background-color: #282c34;
+    color: #ffffff;
+    padding: 40px;
+    margin: 0;
+  }
+  h1.exo-2-heading {
+    font-weight: 700; /* Heading weight */
+    color: #ff4757;
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  button.exo-2-button {
+    font-weight: 500; /* Button weight */
+    border-radius: 10px;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    background-color: #ff4757;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgb(15, 13, 13);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+
+  h1 {
+    color: #007bff;
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  marquee {
+    font-size: 24px;
+    color: #85d7ff;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(51, 153, 255);
+  }
+
+  button {
+    border-radius: 10px;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgb(15, 13, 13);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+
+  button:hover {
+    background-color: #3399ff;
+    transform: scale(1.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  #reset {
+    display: none;
+    margin: 20px auto;
+  }
+
+  #count,
+  #roundResult {
+    color: #0056b3;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  #result {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+
+  #try {
+    color: #007bff;
+    font-size: 18px;
+    margin: 20px 0;
+  }
+
+  .reset-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mode-button {
+    margin-top: 20px;
+  }
+
+  .player-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+
+  .player {
+    width: 45%;
+    text-align: center;
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .player h3, .player h5{
+    color: #070707;
+  }
+  @media (max-width: 600px) {
+    button {
+      padding: 20px;
+      font-size: 22px;
+    }
+
+    .player {
+      width: 100%;
+    }
+  }
